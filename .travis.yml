@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t shiru1104/docker-react -f Dockerfile.dev .
+  - docker build -t shiru1104/docker-react -f Dockerfile .
 
 script:
   - docker run -e CI=true shiru1104/docker-react npm run test
